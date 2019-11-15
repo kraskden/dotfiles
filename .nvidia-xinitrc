@@ -1,0 +1,8 @@
+#i3_new_conf="/home/denis/.config/i3-nvidia/config"
+xrandr --dpi 144
+setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+compton -b &
+gxkb &
+exec i3
+# -c "$i3_new_conf"
+
