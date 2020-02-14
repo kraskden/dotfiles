@@ -30,7 +30,7 @@ volume master {
 
 wireless _first_ {
 	align = "center"
-        format_up = " %quality"
+        format_up = "%quality"
         format_down = ""
 }
 
@@ -51,7 +51,7 @@ battery all {
 }
 
 tztime local {
-        format = "  %d-%m-%Y   %H:%M:%S"
+        format = " %d-%m-%Y  %H:%M:%S"
 #	format = "<span foreground='#1d3e6a'>time:</span> %time"
 #	format_time = "%H:%M"
 }
