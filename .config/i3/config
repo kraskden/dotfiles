@@ -1,0 +1,86 @@
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
+
+set $ws1 "1: Any  "
+set $ws2 "2: Web  "
+set $ws3 "3: Term  "
+set $ws4 "4: Code  "
+set $ws5 "5: Docs  "
+set $ws6 "6"
+set $ws7 "7: FM  "
+set $ws8 "8: Vim  "
+set $ws9 "9: IM  "
+set $ws10 "10: Music  "
+
+set $nvim dex /home/den/.local/share/applications/nvim.desktop
+
+font pango:JetBrains Mono NL Nerd Font 10
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+tiling_drag modifier titlebar
+
+workspace_layout tabbed
+default_border pixel 2
+hide_edge_borders smart
+workspace_auto_back_and_forth yes
+focus_on_window_activation focus
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+bindsym $mod+x kill
+
+bindsym $mod+j focus left
+bindsym $mod+k focus right
+bindsym $mod+less focus up
+bindsym $mod+greater focus down
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Splitting
+bindsym $mod+h layout splith
+bindsym $mod+Shift+h split h
+bindsym $mod+v layout splitv
+bindsym $mod+Shift+v split v
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+
+bindsym $mod+space floating toggle
+# change focus between tiling / floating windows
+bindsym $mod+Shift+space focus mode_toggle
+bindsym $mod+m resize set 1470 894, move position center
+
+bindsym $mod+a focus parent
+bindsym $mod+q focus child
+
+bindsym $mod+y sticky toggle
+bindsym $mod+z scratchpad show
+bindsym $mod+Shift+z move scratchpad
+bindsym $mod+n bar mode toggle
+
+include ws_bindings.conf
+include modes.conf
+include integration.conf  
+include bar.conf          
+include theme.conf
+include window_rules.conf
+
+set_from_resource $autostart_conf i3wm.autostart autostart.conf
+include $autostart_conf
