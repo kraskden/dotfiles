@@ -2,7 +2,6 @@ if status is-interactive
     set fish_greeting
 end
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ssh='kitty +kitten ssh'
 alias se='sudoedit'
 
