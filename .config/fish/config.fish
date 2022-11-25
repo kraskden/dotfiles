@@ -14,4 +14,9 @@ alias gps='git push'
 alias gpl='git pull'
 alias gst='git status'
 
+alias ll='ls -l'
+alias la='ls -a'
+alias lt='exa --tree'
+alias cat='bat'
+
 fzf_configure_bindings --history=\er --directory=\ef --git_log=\eg --variables=\e4

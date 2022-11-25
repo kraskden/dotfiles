@@ -29,16 +29,6 @@ call plug#begin()
     Plug 'doums/darcula'
     Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
     Plug 'nvim-tree/nvim-tree.lua'
-
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'hrsh7th/nvim-cmp' 
-    Plug 'hrsh7th/cmp-nvim-lsp' 
-    Plug 'L3MON4D3/LuaSnip'
-    Plug 'saadparwaiz1/cmp_luasnip'
-
-    Plug 'nvim-treesitter/nvim-treesitter'
-    Plug 'windwp/nvim-ts-autotag'
-    Plug 'windwp/nvim-autopairs'
 call plug#end()
 
 colorscheme darcula
@@ -64,6 +54,9 @@ nmap <a-K> :+tabmove<CR>
 " Window
 nnoremap <a-h> <c-w>h
 nnoremap <a-l> <c-w>l
+nnoremap <a-H> <c-w>k
+nnoremap <a-L> <c-w>j
+
 nnoremap <a-s> <c-w>r
 nmap <C-CR> :vnew<CR>
 nmap <a-q> :only<CR>
@@ -90,6 +83,7 @@ nmap ,e :e ~/.config/nvim/init.vim<CR>
 " Plugin config
 lua << EOF
 
+local config = require("nvim-tree.config")
 require("nvim-tree").setup({
     view = {
         mappings = {
@@ -117,5 +111,5 @@ require("nvim-tree").setup({
         }
     }
 })
-
 EOF
+
