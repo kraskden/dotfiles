@@ -21,7 +21,7 @@ font pango:JetBrains Mono NL Nerd Font 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-tiling_drag modifier titlebar
+#tiling_drag modifier titlebar
 
 workspace_layout tabbed
 default_border pixel 2

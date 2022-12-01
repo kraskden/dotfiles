@@ -17,6 +17,6 @@ alias gst='git status'
 alias ll='ls -l'
 alias la='ls -a'
 alias lt='exa --tree'
-alias cat='bat'
+alias cat='batcat'
 
 fzf_configure_bindings --history=\er --directory=\ef --git_log=\eg --variables=\e4
