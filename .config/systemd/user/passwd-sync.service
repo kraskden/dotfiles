@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync keepassxc database
+Wants=passwd-sync.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/den/bin/passwd-sync
+
+[Install]
+WantedBy=multi-user.target
