@@ -17,7 +17,7 @@ set $ws10 "10: Music  "
 
 set $nvim dex /home/d.kraskouski/.local/share/applications/nvim.desktop
 
-font pango:JetBrains Mono NL Nerd Font 10
+font pango:JetBrains Mono NL NF 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
