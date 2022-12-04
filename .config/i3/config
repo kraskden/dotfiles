@@ -73,7 +73,8 @@ bindsym $mod+q focus child
 bindsym $mod+y sticky toggle
 bindsym $mod+z scratchpad show
 bindsym $mod+Shift+z move scratchpad
-bindsym $mod+n bar mode toggle
+bindsym $mod+n bar mode toggle bar-primary
+bindsym $mod+Shift+n bar hidden_state hide bar-tray
 
 bindsym $mod+o [urgent=latest] focus
 bindsym $mod+bracketright bar hidden_state toggle bar-tray
