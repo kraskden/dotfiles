@@ -34,49 +34,40 @@ bindsym $mod+Shift+r restart
 
 bindsym $mod+x kill
 
+# Focus
 bindsym $mod+j focus left
 bindsym $mod+k focus right
-bindsym $mod+less focus up
-bindsym $mod+greater focus down
+bindsym $mod+Shift+j focus down
+bindsym $mod+Shift+k focus up
 
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+a focus parent
+bindsym $mod+q focus child
 
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move right
+# Moving
+bindsym $mod+less move left
+bindsym $mod+greater move right
+bindsym $mod+Shift+less move up
+bindsym $mod+Shift+greater move down
 
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# Splitting
+# Layout manipulation
 bindsym $mod+h layout splith
 bindsym $mod+Shift+h split h
 bindsym $mod+v layout splitv
 bindsym $mod+Shift+v split v
-
-# change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 
+# Floating support
 bindsym $mod+space floating toggle
-# change focus between tiling / floating windows
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+m resize set 1470 894, move position center
 
-bindsym $mod+a focus parent
-bindsym $mod+q focus child
 
 bindsym $mod+y sticky toggle
 bindsym $mod+z scratchpad show
 bindsym $mod+Shift+z move scratchpad
 bindsym $mod+n bar mode toggle bar-primary
-
 bindsym $mod+o [urgent=latest] focus
-bindsym $mod+bracketright bar mode toggle bar-tray, bar mode toggle bar-primary
 
 include ws_bindings.conf
 include modes.conf
