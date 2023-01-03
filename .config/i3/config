@@ -76,5 +76,6 @@ include bar.conf
 include theme.conf
 include window_rules.conf
 
-set_from_resource $autostart_conf i3wm.autostart autostart.conf
+set_from_resource $autostart_conf i3wm.autostart autostart-intel.conf
+include autostart-common.conf
 include $autostart_conf
