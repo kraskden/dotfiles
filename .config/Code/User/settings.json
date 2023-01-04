@@ -5,7 +5,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.defaultProfile.linux": "fish",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Darcula",
     "telemetry.telemetryLevel": "off",
     "window.zoomLevel": 1.1,
 
@@ -50,4 +49,12 @@
             "source.organizeImports": false
         },
     },
+    "workbench.colorTheme": "Darcula",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoImportUserSymbols": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "basic",
 }

@@ -18,5 +18,6 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lt='exa --tree'
 alias cat='batcat'
+alias fd='fdfind'
 
 fzf_configure_bindings --history=\er --directory=\ef --git_log=\eg --variables=\e4
