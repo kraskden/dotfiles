@@ -5,7 +5,10 @@ import json
 import subprocess
 
 def get_layout():
-    return subprocess.check_output('xkb-switch').decode().strip().upper() + ' '
+    try:
+        return subprocess.check_output('xkb-switch').decode().strip().upper() + ' '
+    except subprocess.CalledProcessError:
+        return "RU "
 
 def print_line(message):
     """ Non-buffered printing to stdout. """
