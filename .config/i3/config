@@ -21,13 +21,11 @@ font pango:JetBrains Mono NL NF 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-#tiling_drag modifier titlebar
 
 workspace_layout tabbed
 default_border pixel 2
-default_floating_border pixel 2
 hide_edge_borders smart
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
 focus_on_window_activation focus
 
 bindsym $mod+Shift+c reload
@@ -37,23 +35,16 @@ bindsym $mod+x kill
 
 bindsym $mod+j focus left
 bindsym $mod+k focus right
-bindsym $mod+less focus up
-bindsym $mod+greater focus down
+bindsym $mod+Shift+j focus down
+bindsym $mod+Shift+k focus up
 
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# Moving
+bindsym $mod+less move left
+bindsym $mod+greater move right
+bindsym $mod+Shift+less move up
+bindsym $mod+Shift+greater move down
 
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move right
-
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# Splitting
+# Layout manipulation
 bindsym $mod+h layout splith
 bindsym $mod+Shift+h split h
 bindsym $mod+v layout splitv
@@ -75,9 +66,7 @@ bindsym $mod+y sticky toggle
 bindsym $mod+z scratchpad show
 bindsym $mod+Shift+z move scratchpad
 bindsym $mod+n bar mode toggle bar-primary
-
 bindsym $mod+o [urgent=latest] focus
-bindsym $mod+bracketright bar hidden_state toggle bar-tray
 
 include ws_bindings.conf
 include modes.conf
@@ -86,5 +75,5 @@ include bar.conf
 include theme.conf
 include window_rules.conf
 
-set_from_resource $autostart_conf i3wm.autostart autostart.conf
+set_from_resource $autostart_conf i3wm.autostart autostart-intel.conf
 include $autostart_conf

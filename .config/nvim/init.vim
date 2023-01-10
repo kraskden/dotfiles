@@ -29,6 +29,9 @@ call plug#begin()
     Plug 'doums/darcula'
     Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
     Plug 'nvim-tree/nvim-tree.lua'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 colorscheme darcula
@@ -113,3 +116,11 @@ require("nvim-tree").setup({
 })
 EOF
 
+"lua <<EOF
+"require("telescope").setup() 
+"EOF
+
+
+"nnoremap <C-n> <cmd>Telescope find_files<cr>
+"nnoremap <C-f> <cmd>Telescope live_grep<cr>
+"nnoremap <C-e> <cmd>Telescope buffers<cr>

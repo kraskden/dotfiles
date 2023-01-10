@@ -20,4 +20,6 @@ alias lt='exa --tree'
 alias cat='batcat'
 alias fd='fdfind'
 
+alias aur='command ssh aur@aur.archlinux.org'
+
 fzf_configure_bindings --history=\er --directory=\ef --git_log=\eg --variables=\e4
