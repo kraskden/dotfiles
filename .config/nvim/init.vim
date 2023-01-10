@@ -73,6 +73,8 @@ nmap <F1> :tab help<CR>
 nnoremap D dd
 nnoremap Z ZZ
 
+nmap cd :tcd%:p:h<CR>
+
 " Plugins 
 
 nmap <A-f> :NvimTreeToggle<CR>
