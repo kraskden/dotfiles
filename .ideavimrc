@@ -49,6 +49,8 @@ nmap <A-F> :NERDTree<CR>
 let g:NERDTreeMapActivateNode="l"
 let g:NERDTreeMapOpenVSplit="L"
 let g:NERDTreeMapCloseDir="h"
+let g:NERDTreeMapCloseDir="h"
+let g:NERDTreeMapCloseDir="h"
 
 " TODO: refactoring action
 nmap <A-C> <Action>(ActivateTerminalToolWindow)

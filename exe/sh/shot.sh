@@ -2,4 +2,4 @@
 
 path="$HOME/pics/shots"
 
-maim $@ "$path/$(date +%d_%m_%y__%H:%M:%S).png"
+exec maim $@ "$path/$(date +%d_%m_%y__%H:%M:%S).png"

@@ -16,9 +16,13 @@ set $ws9 "9: IM  "
 set $ws10 "10: Music  "
 
 set $nvim dex /home/den/.local/share/applications/nvim.desktop
+set $lock i3lock -i /home/den/pics/wall/lock.png
 
-font pango:JetBrains Mono NL Nerd Font 10
+font pango:JetBrains Mono NL Nerd Font 14
 
+#gaps outer 0px
+#gaps inner 5px
+#smart_gaps on
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 tiling_drag modifier titlebar

@@ -6,9 +6,9 @@ import subprocess
 
 def get_layout():
     try:
-        return subprocess.check_output('xkb-switch').decode().strip().upper() + ' '
+        return subprocess.check_output('xkb-switch').decode().strip().upper()
     except subprocess.CalledProcessError:
-        return "RU "
+        return "RU"
 
 def print_line(message):
     """ Non-buffered printing to stdout. """
@@ -42,5 +42,5 @@ if __name__ == '__main__':
             line, prefix = line[1:], ','
 
         j: list = json.loads(line)
-        j.append({'full_text' : get_layout(), 'name' : 'layout'})
+        j.append({'full_text' : get_layout() + ' ', 'name' : 'layout'})
         print_line(prefix+json.dumps(j))

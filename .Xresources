@@ -1,1 +1,2 @@
 i3wm.autostart: autostart-intel.conf
+Xft.dpi: 108

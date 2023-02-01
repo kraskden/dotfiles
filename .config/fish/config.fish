@@ -6,6 +6,7 @@ alias ssh='kitty +kitten ssh'
 alias se='sudoedit'
 
 set vps 'denis@351y.l.time4vps.cloud'
+set dellpc 'd.kraskouski@192.168.100.31'
 
 alias ga='git add .'
 alias gcmt='git commit'

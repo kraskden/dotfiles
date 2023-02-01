@@ -6,8 +6,7 @@
 
 export EDITOR=nvim
 export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_SCALE_FACTORS=1.25
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export PATH="${PATH}:/home/den/bin"
 export RANGER_LOAD_DEFAULT_RC=false
 export GOPATH=$HOME/exe/go
