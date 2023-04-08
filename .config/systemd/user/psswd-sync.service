@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync keepassxc database
+Wants=psswd-sync.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/den/bin/psswd-sync
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,53 @@
+{
+    "editor.fontFamily": "'JetBrains Mono','monospace', monospace",
+    "editor.fontSize": 17,
+    "editor.fontLigatures": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Darcula",
+    "telemetry.telemetryLevel": "off",
+    "window.zoomLevel": 1.1,
+
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["D"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": [":"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<esc>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": ["workbench.action.toggleZenMode"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before": ["<leader>", "i"],
+            "commands": ["editor.action.organizeImports"]
+        },
+    ],
+    "[go]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": false
+        },
+    },
+}

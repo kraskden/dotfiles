@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ViFm
+GenericName=File Manager
+Exec=kitty -1 vifm
+Terminal=false
+Type=Application
+Keywords=File
+Icon=vifm
+Categories=Utility;FileManager;FileTools;
+StartupNotify=true
+MimeType=inode/directory

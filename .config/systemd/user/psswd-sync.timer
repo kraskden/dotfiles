@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync keepassxc database
+After=network-online.target
+
+[Timer]
+OnActiveSec=1s
+OnUnitActiveSec=10min
+
+[Install]
+WantedBy=timers.target

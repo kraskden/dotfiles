@@ -1,0 +1,6 @@
+require "local.options"
+require "local.plugins"
+require "local.keymap"
+require "local.colorscheme"
+require "local.nvim-tree"
+require "local.bufferline"
