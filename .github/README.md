@@ -3,21 +3,21 @@
 
 ![image](./images/original.png)
 
-Includes configuration for:
+### Includes configuration for:
 
-* i3wm + i3bar + i3status
-* dunst
-* kitty + fish shell
-* neovim
-* vifm
-* IDEA + ideavim
+* [i3wm + i3bar](../.config/i3) + [i3status](../.config/i3status)
+* [dunst](../.config/dunst)
+* [kitty](../.config/kitty) + [fish shell](../.config/fish)
+* [neovim](../.config/nvim)
+* [vifm](../.config/vifm)
+* IDEA + [ideavim](../.ideavimrc)
 
-Also includes: 
+### Also includes: 
 
-* Wallpapers
-* Custom shell scripts
+* [Wallpapers](../pics)
+* [Custom shell scripts](../exe)
 
-### See others
+### Links
 
-* [RU] Пост на Linux.org.ru о тяжелых буднях арчевода
+* [RU] [Пост на Linux.org.ru о тяжелых буднях арчевода](https://www.linux.org.ru/gallery/screenshots/17187470)
 
