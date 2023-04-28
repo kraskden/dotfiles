@@ -127,7 +127,7 @@ nnoremap zh za
 
 " Todo refactour to nvim 
 " Open file in existing instance of gvim
-nnoremap o :!gvim --remote-tab-silent %f<cr>
+nnoremap o :!nvim --server ~/.cache/nvim/nvim.socket.main --remote %f<cr>
 " Open file in new instance of gvim
 nnoremap O :!gvim %f<cr>
 

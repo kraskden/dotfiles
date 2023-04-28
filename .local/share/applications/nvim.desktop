@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Neovim
 GenericName=Text Editor
-Exec=kitty -c /home/den/.config/kitty/kitty-nvim.conf nvim %F
+Exec=kitty -c /home/den/.config/kitty/kitty-nvim.conf nvim --listen /home/den/.cache/nvim/nvim.socket.main %F
 Terminal=false
 Type=Application
 Keywords=Text;editor;
