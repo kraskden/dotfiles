@@ -21,5 +21,6 @@ alias lt='exa --tree'
 alias cat='bat'
 
 alias aur='command ssh aur@aur.archlinux.org'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 fzf_configure_bindings --history=\er --directory=\ef --git_log=\eg --variables=\e4
