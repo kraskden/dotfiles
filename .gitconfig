@@ -4,4 +4,7 @@
 	autoSetupRemote = true
 [user]
 	name = Fizzika
-	email = Fizzika.NET@yandex.ru
+    email = Fizzika.NET@yandex.ru
+
+[includeIf "gitdir:~/job/"]
+    path = ~/job/.gitconfig

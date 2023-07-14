@@ -47,10 +47,16 @@ nmap <leader>d <Action>(ToggleDistractionFreeMode)
 nmap <leader>u <Action>(ShowUsages)
 nmap <leader>a <Action>(GotoAction)
 nmap <leader>w <Action>(SurroundWith)
+nmap <leader>e <Action>(ExtractMethod)
+nmap <leader>v <Action>(IntroduceVariable)
 nmap <leader>p <Action>(RecentProjectListGroup)
 nmap <leader>m <Action>(RunAnything)
 nmap <leader>g <Action>(Git.Branches)
 
+vmap <leader>w <Action>(SurroundWith)
+vmap <leader>a <Action>(GotoAction)
+vmap <leader>e <Action>(ExtractMethod)
+vmap <leader>v <Action>(IntroduceVariable)
 
 " Jumps
 nmap ge <Action>(GotoNextError)

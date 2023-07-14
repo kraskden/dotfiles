@@ -22,7 +22,7 @@ map_all("n", {
     ["<A-.>"] = ":BufferLineMoveNext<CR>",
     ["<A-,>"] = ":BufferLineMovePrev<CR>",
     ["<A-/>"] = ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>",
-    ["<leader>n"] = ":enew<CR>",
+    ["<A-n>"] = ":enew<CR>",
 
     -- Windows
     ["<A-h>"] = "<C-w>h",
