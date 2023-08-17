@@ -13,9 +13,6 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-# Set keyboard layout before xmodmap executing
-setxkbmap -model pc105 -layout us,ru -option grp:caps_toggle
-
 if [ -f $sysmodmap ]; then
     xmodmap $sysmodmap
 fi
@@ -32,4 +29,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+if [[ $(vcard) == "nvidia" ]]; then
+    xrandr --setprovideroutputsource modesetting NVIDIA-0
+    xrandr --auto
+fi
 exec i3

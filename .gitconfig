@@ -8,3 +8,5 @@
 
 [includeIf "gitdir:~/job/"]
     path = ~/job/.gitconfig
+[credential]
+	helper = store

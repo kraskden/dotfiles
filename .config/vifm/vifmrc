@@ -123,6 +123,9 @@ nnoremap <space> tj
 " Execute
 nnoremap xc :copy &<cr>
 nnoremap xx :move &<cr>
+vnoremap xc :copy &<cr>
+vnoremap xx :move &<cr>
+
 nnoremap xj :jobs<cr>
 nnoremap xv :!nvim --server ~/.cache/nvim/nvim.socket.main --remote %f<cr>
 nnoremap xm :!quodlibet --play-file %f &>/dev/null &<cr>

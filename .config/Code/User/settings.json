@@ -1,13 +1,12 @@
 {
-    "editor.fontFamily": "'JetBrains Mono','monospace', monospace",
-    "editor.fontSize": 17,
+    "editor.fontFamily": "'Iosevka', 'JetBrains Mono','monospace', monospace",
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.defaultProfile.linux": "fish",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Darcula",
     "telemetry.telemetryLevel": "off",
-    "window.zoomLevel": 1.1,
+    "window.zoomLevel": 1,
 
     "vim.leader": "<space>",
     "vim.hlsearch": true,
@@ -24,7 +23,7 @@
             "commands": ["editor.action.rename"]
         },
         {
-            "before": [":"],
+            "before": ["<leader>", "a"],
             "commands": ["workbench.action.showCommands"]
         },
         {
@@ -50,4 +49,12 @@
             "source.organizeImports": false
         },
     },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "python.languageServer": "Pylance",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "explorer.confirmDelete": false,
 }
