@@ -64,8 +64,8 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 
 # Floating support
-bindsym $mod+space floating toggle
-bindsym $mod+Shift+space focus mode_toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+l focus mode_toggle
 bindsym $mod+m resize set 1470 894, move position center
 
 
