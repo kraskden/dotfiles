@@ -9,7 +9,6 @@ is_nvidia() {
     else
         echo $(readlink $X_CONF | grep 'nvidia')
     fi
-    echo $IS_NVIDIA
 }
 
 print_state() {

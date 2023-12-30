@@ -19,7 +19,7 @@ set norunexec
 
 colorscheme gruvbox Default
 
-set timefmt=%m/%d\ %H:%M
+set timefmt=%d/%m/%Y\ %H:%M
 set dotdirs=treeleafsparent
 
 set wildmenu
@@ -50,7 +50,7 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+set statusline="%A %10u:%-7g %15s %20d  "
 
 " ------------------------------------------------------------------------------
 
@@ -82,6 +82,10 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
 
+" Autocommand
+autocmd DirEnter ~/dl setlocal sort=-mtime
+autocmd DirEnter ~/pics/shots setlocal sort=-mtime
+
 " Mappings 
 "
 nnoremap Z ZZ
@@ -96,8 +100,6 @@ nnoremap ,t :!kitty -1 &<cr>
 nnoremap O :sort<cr>
 nnoremap on :setlocal sort=+name<cr>gg
 nnoremap ot :setlocal sort=-mtime<cr>gg
-autocmd DirEnter ~/dl setlocal sort=-mtime
-autocmd DirEnter ~/pics/shots setlocal sort=-mtime
 
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv

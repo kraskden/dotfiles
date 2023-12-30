@@ -19,6 +19,7 @@ alias gchk='git checkout'
 alias ll='ls -l'
 alias la='ls -a'
 alias lt='exa --tree'
+alias tree='exa --tree'
 alias cat='bat'
 
 alias aur='command ssh aur@aur.archlinux.org'
