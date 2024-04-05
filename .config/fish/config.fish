@@ -23,7 +23,10 @@ alias tree='exa --tree'
 alias cat='bat'
 
 alias aur='command ssh aur@aur.archlinux.org'
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+function config 
+    git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
+end;
 
 abbr -a msp music sync phone
 abbr -a msy music sync yandex
