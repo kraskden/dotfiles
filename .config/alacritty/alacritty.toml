@@ -1,0 +1,18 @@
+[window]
+padding = {x = 0, y = 5}
+
+[font]
+normal = {family="JetBrains Mono NL Nerd Font"}
+size =  15.0
+
+[terminal]
+shell = "fish"
+
+[colors]
+[colors.primary]
+background="#1d1d21"
+
+[keyboard]
+bindings = [
+    {key="N", mods="Alt", action="CreateNewWindow"}
+]

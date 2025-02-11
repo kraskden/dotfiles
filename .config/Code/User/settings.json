@@ -60,4 +60,5 @@
     "explorer.confirmDelete": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "svelte.enable-ts-plugin": true,
+    "files.autoSave": "afterDelay",
 }

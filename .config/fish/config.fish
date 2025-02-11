@@ -2,10 +2,13 @@ if status is-interactive
     set fish_greeting
 end
 
-alias ssh='kitty +kitten ssh'
+#alias ssh='kitty +kitten ssh'
 alias se='sudoedit'
 
-set vps 'denis@351y.l.time4vps.cloud'
+#alias ssh_vps='kitty +kitten ssh den@194.87.248.37 -p 2274'
+alias vps="den@194.87.248.37 -p 2274"
+
+set old_vps 'denis@351y.l.time4vps.cloud'
 
 alias ga='git add .'
 alias gcmt='git commit'

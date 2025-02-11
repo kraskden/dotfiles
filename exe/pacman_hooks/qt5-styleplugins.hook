@@ -1,9 +1,0 @@
-[Trigger]
-Type = Package
-Operation = Upgrade
-Target = qt5-base
-
-[Action]
-Description = Rebuild qt5-styleplugins
-When = PostTransaction
-Exec = /usr/bin/sudo -u den /usr/bin/paru --rebuild --skipreview --noconfirm -S qt5-styleplugins

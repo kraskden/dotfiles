@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ViFm
 GenericName=File Manager
-Exec=kitty -1 vifm
+Exec=alacritty -e vifm
 Terminal=false
 Type=Application
 Keywords=File
