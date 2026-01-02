@@ -15,3 +15,5 @@ export CM_LAUNCHER=rofi
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
 	exec startx
 fi
+
+source /home/den/.config/broot/launcher/bash/br

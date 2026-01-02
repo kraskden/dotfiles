@@ -6,9 +6,10 @@ end
 alias se='sudoedit'
 
 #alias ssh_vps='kitty +kitten ssh den@194.87.248.37 -p 2274'
-alias vps="den@194.87.248.37 -p 2274"
+alias ssh_vps="ssh den@194.87.248.37 -p 2274"
 
 set old_vps 'denis@351y.l.time4vps.cloud'
+set finDB '/home/den/docs/finance/finance.sqlite'
 
 alias ga='git add .'
 alias gcmt='git commit'

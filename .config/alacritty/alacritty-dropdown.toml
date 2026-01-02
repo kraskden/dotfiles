@@ -4,4 +4,4 @@ import = ["~/.config/alacritty/alacritty.toml"]
 
 [window]
 class = {instance="dropdown-term", general="AlacrittyDropdown"}
-opacity = 0.85
+opacity = 0.9

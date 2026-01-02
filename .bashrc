@@ -15,3 +15,5 @@ if [ -f '/home/den/yandex-cloud/path.bash.inc' ]; then source '/home/den/yandex-
 # The next line enables shell command completion for yc.
 if [ -f '/home/den/yandex-cloud/completion.bash.inc' ]; then source '/home/den/yandex-cloud/completion.bash.inc'; fi
 
+
+source /home/den/.config/broot/launcher/bash/br

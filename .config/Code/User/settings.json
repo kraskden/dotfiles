@@ -53,7 +53,6 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
-    "workbench.colorTheme": "Visual Studio Dark",
     "python.languageServer": "Pylance",
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,

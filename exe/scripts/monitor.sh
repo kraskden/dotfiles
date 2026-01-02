@@ -1,7 +1,12 @@
 #!/bin/bash
 
-EXTERNAL=DP-2
-INTERNAL=eDP-1-1
+XRANDR_CONNECTED=$(xrandr | grep -w "connected")
+EXTERNAL=$(echo "$XRANDR_CONNECTED"  | grep -e '^DP.*' | cut -d ' ' -f 1)
+INTERNAL=$(echo "$XRANDR_CONNECTED" | grep 'eDP' | cut -d ' ' -f 1)
+
+echo "monitor utility: detected monitors"
+echo "EXTERNAL: $EXTERNAL"
+echo "INTERNAL: $INTERNAL"
 
 enable_external() {
     xrandr --output $EXTERNAL --primary --mode 1920x1080 --rate 165 --output $INTERNAL --off;

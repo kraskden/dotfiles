@@ -4,11 +4,7 @@ GPU_CONF=/etc/X11/gpu.conf.d
 X_CONF=/etc/X11/xorg.conf.d/10-gpu.conf
 
 is_nvidia() {
-    if [[ $DISPLAY ]]; then
-        echo $(glxinfo | grep 'NVIDIA Corporation')
-    else
-        echo $(readlink $X_CONF | grep 'nvidia')
-    fi
+    echo $(readlink $X_CONF | grep 'nvidia')
 }
 
 print_state() {
